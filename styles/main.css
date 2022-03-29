@@ -91,10 +91,6 @@ a {
 
 
 /* HERO SECTION */
-.hero-section {
-    height: 100vh;
-}
-
 .hero-section .hero-container {
     display: flex;
     align-items: stretch;
