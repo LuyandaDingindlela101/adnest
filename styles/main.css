@@ -1,0 +1,317 @@
+:root {
+    --color-white: #ffffff;
+
+    --color-accent: #a540a0;
+    --color-primary: #0087c7;
+    --color-secondary: #f67036;
+
+    --color-text-primary: #333333;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 50px;
+    font-style: italic;
+    color: var(--color-text-primary);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-intro {
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+.section-intro h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--color-text-primary);
+}
+
+.section-intro p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.btn {
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 50px;
+    display: inline-block;
+    color: var(--color-white);
+    text-transform: capitalize;
+    background: var(--color-accent);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HEADER SECTION */
+.header-section {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-section .nav-container .nav-list {
+    text-align: end;
+}   
+
+.header-section .nav-container .nav-list li {
+    display: inline;
+    padding: 0 10px;
+} 
+
+.header-section .nav-container .nav-list li a { 
+    font-weight: 700;
+    color: var(--color-text-primary);
+} 
+
+
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+}
+
+.hero-section .hero-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.hero-section .hero-container .hero-content,
+.hero-section .hero-container .hero-image {
+    width: 50%;
+}
+
+.hero-section .hero-container .hero-content {
+    padding: 25px;
+    display: grid;
+    background: #434343;
+    place-content: center;
+    color: var(--color-white);
+}
+
+.hero-section .hero-container .hero-content .cta h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-container .hero-content .cta h1 span {
+    color: var(--color-secondary);
+}
+
+.hero-section .hero-container .hero-content .cta a {
+    margin-bottom: 50px;
+}
+
+.hero-section .hero-container .hero-content .cta .process-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-section .hero-container .hero-content .cta .process-container .process {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-section .hero-container .hero-content .cta .process-container .process img {
+    width: 20px;
+}
+
+.hero-section .hero-container .hero-content .cta .process-container .process p {
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.hero-section .hero-container .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* PROCESS SECTION */
+.process-section {
+    padding: 100px 0;
+}
+
+.process-section .process-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process-section .process-container .process {
+    width: 100%;
+    max-width: 300px;
+    padding: 50px 25px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.process-section .process-container .process:nth-child(1) {
+    background: var(--color-accent);
+}
+
+.process-section .process-container .process:nth-child(2) {
+    background: var(--color-primary);
+}
+
+.process-section .process-container .process:nth-child(3) {
+    background: var(--color-secondary);
+}
+
+.process-section .process-container .process .process-header {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-section .process-container .process .process-header img {
+    width: 20px;
+}
+
+.process-section .process-container .process .process-header p {
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.process-section .btn-container {
+    text-align: end;
+    margin-top: 50px;
+}
+
+
+/* BANNER SECTION */
+.banner-section {
+    padding-top: 100px;
+    background: var(--color-primary);
+}
+
+.banner-section .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-section .banner-container .banner-content {
+    width: 60%;
+    color: var(--color-white);
+}
+
+.banner-section .banner-container .banner-content h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-section .banner-container .banner-content p {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-section .banner-container .banner-image img {
+    transform: translateY(50px);
+}
+
+
+/* SUBSCRIPTION SECTION */
+.subscription-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.subscription-section .subscription-form {
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 auto 20px auto;
+    justify-content: space-between;
+    border: 2px solid var(--color-primary);
+}
+
+.subscription-section .subscription-form input {
+    border: none;
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subscription-section .subscription-form input::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-primary);
+}
+
+.subscription-section .subscription-form button {
+    border: none;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subscription-section p {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 550px;
+    font-weight: 600;
+}
+
+.subscription-section p a {
+    text-decoration: underline;
+    color: var(--color-text-primary);
+}
+
+
+/* FOOTER SECTION */
+.footer-section {
+    padding: 20px 0;
+}
+
+.footer-section .footer-container {
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section .footer-container .partners-container img {
+    height: 30px;
+    margin-right: 50px;
+}
+
+.footer-section .footer-container p {
+    font-weight: 700;
+}
