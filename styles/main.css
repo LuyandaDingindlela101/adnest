@@ -402,7 +402,7 @@ a {
 
     /* HERO SECTION */
     .hero-section .hero-container .hero-content .cta h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     
@@ -413,6 +413,33 @@ a {
         font-size: 16px;
         font-style: italic;
         font-family: 'Open Sans', sans-serif;
+    }
+}
+
+
+/* MEDIA QUERRY FOR SCREENS 0PX - 300PX */
+@media only screen and (max-width: 300px) {
+    .header-section .nav-container .nav-list li a {
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--color-text-primary);
+    }
+
+    
+    .subscription-section .subscription-form {
+        border: none;
+        flex-wrap: wrap;
+    }
+
+    .subscription-section .subscription-form input {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 50px;
+        border: 2px solid var(--color-primary);
+    }
+
+    .subscription-section .subscription-form button {
+        width: 100%;
     }
 }
 
