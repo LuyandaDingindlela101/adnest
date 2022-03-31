@@ -371,6 +371,11 @@ a {
     .footer-section .footer-container {
         flex-wrap: wrap;
     }
+    
+    .footer-section .footer-container .partners-container {
+        width: 100%;
+        text-align: center;
+    }
 
     .footer-section .footer-container p {
         width: 100%;
